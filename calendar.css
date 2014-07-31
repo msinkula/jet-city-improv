@@ -1,0 +1,343 @@
+@font-face {
+    font-family: 'Gotham Black';
+    src: url('fonts/gotham-black.eot');
+    src: url('fonts/gotham-black.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gotham-black.woff') format('woff'),
+         url('fonts/gotham-black.ttf') format('truetype'),
+         url('fonts/gotham-black.svg#gotham_blackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* Widget */
+#upcoming_events_calendar ul {
+	padding: 0;
+	margin: 0;
+}
+
+#upcoming_events_calendar li {
+	padding: 0;
+	margin: 0;
+}
+
+#upcoming_events_calendar li { /* date & box */
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#upcoming_events_calendar li ul li { /* items */
+	font-weight: normal;
+	margin-bottom: 0px;
+}
+
+
+.calnk a {
+	text-decoration:none; 
+	color: #BE0000; 
+	border-bottom: 1px solid #BE0000;
+}
+
+.calnk a:hover {
+	background-position:0 0;
+	text-decoration:none;  
+	color:#000000;
+	border-bottom: none;
+ }
+
+.calnk a span { 
+	display:none; 
+}
+
+.calnk a:hover span {
+	color:#000; 
+	background: #FFF; 
+	display: none; /* show pop up or not */
+	position: absolute; 
+	margin-top:1px; 
+	padding:5px; 
+	/*max-width: 150px;*/ 
+	z-index: 100;
+	line-height: 1.2em;
+}
+
+table.calendar-table {
+	border: 0 !important;
+	/*width: 100% !important;*/
+	/*border-collapse: separate !important;*/
+	/*border-spacing: 2px !important;*/
+}
+
+table.calendar-table-mini {
+	display: none;
+	/*width: 100% !important;*/
+	/*border-collapse: separate !important;*/
+	background-color: white;
+	
+}
+
+table.calendar-table-mini tbody {
+	/*width: 100% !important;*/
+	/*background-color: #DDD;*/
+	}
+
+.calendar-heading {
+	font-family: "Gotham Black", sans-serif;
+	font-weight: normal;
+	text-align: center;
+	border: none;
+	background-color: #FFF;
+	
+}
+
+.calendar-next {
+	width: 25%;
+	text-align:center;
+}
+
+	.calendar-next a {
+		color: #000;
+		border-bottom: none;
+		}
+				
+	.calendar-next a:hover {
+		color: #A7181D;
+		}
+			
+		
+
+.calendar-prev {
+	width: 25%;
+	text-align: center;
+	font-size: 1em;
+}
+
+.calendar-month {
+	font-family: "Gotham Black", sans-serif;
+	width: 50%;
+	font-size: 2em;
+	text-align: center;
+	font-weight: normal;
+	padding: 10px 0;
+	line-height: 100%;
+}
+
+.normal-day-heading {
+	font-family: "Gotham Black", sans-serif;
+	font-weight: normal;
+	text-align:center;
+	width:14%;
+	height:25px;
+	font-size:0.75em;
+	background-color: #000;
+	color: #FFF;
+}
+
+.weekend-heading {
+	font-family: "Gotham Black", sans-serif;
+	font-weight: normal;
+	text-align:center;
+	width: 14%;
+	height: 25px;
+	font-size: 0.75em;
+	background-color: #000;
+	color: #FFF;
+}
+
+.day-with-date {
+	font-family: "Gotham Black", sans-serif;
+	font-weight: normal;
+	vertical-align:text-top;
+	text-align:left;
+	/*width: 14%;*/
+	/*height:60px;*/
+	border:1px solid #DDD;
+	padding: 4px;
+}
+.no-events {
+
+}
+
+.day-without-date {
+	font-family: "Gotham Black", sans-serif;
+	font-weight: normal;
+	/*width: 14%;*/
+	/*height:60px;*/
+	border:1px solid #DDD;
+	padding: 4px;
+}
+span.weekend {
+	font-family: "Gotham Black", sans-serif;
+	font-weight: normal;
+}
+.current-day {
+	font-family: "Gotham Black", sans-serif;
+	font-weight: normal;
+	vertical-align:text-top;
+	text-align:left;
+	/*width: 14%;*/
+	/*height:60px;*/
+	border:1px solid #000;
+	padding: 4px;
+	/*background-color:#E4EBE3;*/
+}
+span.event {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+	span.event a {
+			color: #A7181D;
+			border-bottom: 1px solid #BE0000;
+			}
+			
+	span.event p a:hover {
+		color: #000;
+		border-bottom: none;
+		}
+
+div.kjo-link {
+	display: none !important;
+	font-size:0.75em;
+	text-align:center;
+}
+.calendar-date-switcher {
+	height:25px;
+	text-align:center;
+	border:1px solid #D6DED5;
+	background-color:#E4EBE3;
+}
+.calendar-date-switcher form {
+	margin:2px;
+}
+.calendar-date-switcher input {
+	border:1px #D6DED5 solid;
+	margin:0;
+}
+.calendar-date-switcher select {
+	border:1px #D6DED5 solid;
+	margin:0;
+}
+.calnk a:hover span span.event-title {
+	padding:0;
+	text-align:center;
+	font-weight:bold;
+	font-size:1.2em;
+	margin-left:0px;
+}
+.calnk a:hover span span.event-title-break {
+	width:96%;
+	text-align:center;
+	height:1px;
+	margin-top:5px;
+	margin-right:2%;
+	padding:0;
+	background-color:#000000;
+	margin-left:0px;
+}
+.calnk a:hover span span.event-content-break {
+	width:96%;
+	text-align:center;
+	height:1px;
+	margin-top:5px;
+	margin-right:2%;
+	padding:0;
+	background-color:#000000;
+	margin-left:0px;
+}
+.page-upcoming-events {
+	/*font-size:80%;*/
+}
+.page-todays-events {
+	/*font-size:80%;*/
+}
+.calendar-table table,tbody,tr,td {
+	/*margin:0 !important;*/
+	/*padding:0 !important;*/	
+}
+
+table.calendar-table {
+	background-color: #FFF;
+	margin-bottom:5px !important;
+}
+.cat-key {
+	width:100%;
+	margin-top:30px;
+	padding:5px;
+	border:0 !important;
+}
+.cal-separate {
+   border:0 !important;
+   margin-top:10px;
+}
+table.cat-key {
+   margin-top:5px !important;
+   border:1px solid #DFE6DE !important;
+   border-collapse:separate !important;
+   border-spacing:4px !important;
+   margin-left:2px !important;
+   width:99.5% !important;
+   margin-bottom:5px !important;
+}
+.cat-key td {
+   border:0 !important;
+}
+
+/* Mobile Screen Set to 600px or Below  */
+@media screen and (max-width: 600px) {
+	
+table.cat-key {
+	display: none;
+}
+
+table.calendar-table {
+	display: none;
+}
+	
+table.calendar-table-mini {
+	display: block;
+	margin-bottom: 100px;
+}
+
+#sidebar .calnk a span {
+	display:none;
+}
+.calnk a span {
+	position: absolute;
+	top: 350px;
+	left: 10px;
+	z-index: 5;
+	max-width: 580px;
+}
+
+.calnk a span strong {
+	font-weight:normal;
+}
+
+.weekend-heading {
+	width: 100px;
+	}
+
+
+.calnk a:hover span {
+	display: block; /* show pop up or not */
+}
+
+
+}
+
+/* Mobile Screen Set to 400px or Below  */
+@media screen and (max-width: 400px) {
+	
+.calnk a span {
+	position: absolute;
+	top: 385px;
+	left: 10px;
+	z-index: 5;
+	max-width: 580px;
+}
+
+
+
+}
