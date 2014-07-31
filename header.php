@@ -62,8 +62,6 @@
 <!-- Begin Utility Menu -->
 <div id="utilities">
 
-<?php if (is_singular('staff-member')) { echo ' staff';} ?>
-
 		<!-- Begin Social Icons -->
         <div id="social-icons-tablet">
         <a href="https://www.facebook.com/jetcityimprov" target="_blank" title="Jet City Improv's FaceBook Page"><img src="<?php bloginfo('template_directory'); ?>/images/img-facebook-mobile.png" alt="Jet City Improv's FaceBook Page"></a>
