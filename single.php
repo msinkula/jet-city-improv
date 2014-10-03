@@ -6,8 +6,10 @@
 <?php while (have_posts()) : the_post(); ?>
 <article class="post" id="post-<?php the_ID(); ?>">
     <h1><?php the_title(); ?></h1>
-    <p class="postdata">Posted <?php the_time('M j, Y') ?> in <?php the_category(', ') ?></p>    
-    <?php add_flexslider(); ?>
+    <p class="postdata">Posted <?php the_time('M j, Y') ?> in <?php the_category(', ') ?></p>
+    <div class="featured-image">
+	<?php echo get_the_post_thumbnail($page->ID, 'large'); ?>
+    </div>
     <?php the_content(''); ?> 
     <nav class="post-navigation">
         <span class="post-navigation-previous"><?php previous_post(' &laquo; %','', 'yes'); ?></span>

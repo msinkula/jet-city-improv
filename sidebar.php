@@ -44,17 +44,17 @@
     <?php endif; ?>
     <!-- End Dynamic Sidebar -->
     
-    <!-- Begin Mailing List Link -->
+    <!-- Begin Mailing List Link
     <div id="mailing-list">
     <a href="https://wingitproductions.secure.force.com/signup" target="_blank"><button>Mailing List&nbsp;&raquo;</button></a>
     </div>
-    <!-- End Mailing List Link -->
+     End Mailing List Link -->
     
-    <!-- Begin Donate Link -->
+    <!-- Begin Donate Link
     <div id="donate">
     <a href="../donate/"><button>Donate&nbsp;&raquo;</button></a>
     </div>
-    <!-- End Tickets Link -->
+     End Donate Link -->
     
 </div>
 <!-- End Sidebar -->

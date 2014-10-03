@@ -6,7 +6,7 @@
 
 <!-- Begin Meta -->
 <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
-<meta name="description" content="<?php if ( is_home() || is_category() || is_archive() ) { ?><?php bloginfo('description'); ?><?php } ?><?php if ( is_single() || is_page() ) { echo strip_tags(get_the_excerpt($post->ID)); } ?>" />
+<meta name="description" content="<?php echo strip_tags(get_the_excerpt($post->ID)); ?>" />
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
 <!-- End Meta -->
 
@@ -26,7 +26,7 @@
 <!-- Begin Links -->
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/ico-poop.png" />
+<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/ico-billy.png" />
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/flexslider.css" type="text/css" media="all" />
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/staff-members.css" type="text/css" media="all" />
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/calendar.css" type="text/css" media="all" />
@@ -138,5 +138,5 @@
 <div id="middle">
 
 <!-- Begin Breadcrumbs -->
-<div id="breadcrumbs"><?php if ( !is_page('Home') ) { bcn_display(); } ?></div>
+<div id="breadcrumbs"><?php if (!is_page('Home')) { bcn_display(); } ?></div>
 <!-- End Breadcrumbs -->

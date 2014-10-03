@@ -13,7 +13,7 @@
 
 /* Widget */
 #upcoming_events_calendar ul {
-	padding: 0;
+	/*padding: 0 10px;*/
 	margin: 0;
 }
 
@@ -30,7 +30,12 @@
 #upcoming_events_calendar li ul li { /* items */
 	font-weight: normal;
 	margin-bottom: 0px;
+	list-style: none;
 }
+
+#upcoming_events_calendar ul li ul { /* sub items */
+	padding: 0;
+	}
 
 
 .calnk a {

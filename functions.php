@@ -133,7 +133,7 @@ function add_memberprofile() {
 	}
 	
 	if (!empty($name)) { // name
-		echo '<h1>'.$name.'</h1>';
+		echo '<h2>'.$name.'</h2>';
 	}
 	
 	if (!empty($email)) { // email

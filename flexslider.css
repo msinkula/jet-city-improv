@@ -127,7 +127,7 @@ div.flexslider button.home {
 
 /* Direction Nav */
 .flex-direction-nav {*height: 0;}
-.flex-direction-nav a {width: 30px; height: 30px; /*margin: -10px 0 0 0;*/ display: block; background: url(images/bg-flexnav.png) no-repeat 0 0; position: absolute; top: 45%; z-index: 10; cursor: pointer; text-indent: -9999px; /*opacity: 0;*/ /*-webkit-transition: all .3s ease;*/}
+.flex-direction-nav a {width: 30px; height: 30px; /*margin: -10px 0 0 0;*/ display: block; background: url(images/bg-flexnav.png) no-repeat 0 0; position: absolute; top: 42%; z-index: 10; cursor: pointer; text-indent: -9999px; /*opacity: 0;*/ /*-webkit-transition: all .3s ease;*/}
 .flex-direction-nav .flex-next {background-position: 100% 0; /*right: -50px;*/ }
 .flex-direction-nav .flex-prev {/*left: -50px;*/}
 .flexslider .flex-next {/*opacity: 0.8;*/ right: 20px;}
@@ -140,9 +140,9 @@ div.flexslider button.home {
 .flex-control-paging { /*display: none;*/ }
 .flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
 
-.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3);}
-.flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
-.flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #A8A8A8; /*background: rgba(0,0,0,0.5);*/ cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; /*box-shadow: inset 0 0 3px rgba(0,0,0,0.3);*/}
+.flex-control-paging li a:hover { background: #000; /*background: rgba(0,0,0,0.7);*/ }
+.flex-control-paging li a.flex-active { background: #000; /*background: rgba(0,0,0,0.9);*/ cursor: default; }
 
 .flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
 .flex-control-thumbs li {width: 25%; float: left; margin: 0;}
@@ -193,13 +193,8 @@ div.flexslider button.home {
 		margin-bottom: 10px;
 		}
 		
-	.flex-direction-nav .flex-prev { left: 6px;}
-	.flex-direction-nav .flex-next { right: 6px;}
-		
-	.flex-direction-nav a {
-    	top: 30%;
+	.flex-control-paging, .flex-direction-nav {
 		display: none;
-		/*background-size: 99%;*/
 	}
 	
 	div.flexslider blockquote.home {

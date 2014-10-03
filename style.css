@@ -200,7 +200,7 @@ h1, h2, h3, h4, label {
 		/*padding-left: 20px;*/
 	}
 		
-	body #menu-main-menu li > a:hover, body #menu-main-menu li.current_page_item > a, body #menu-main-menu li.current_page_parent > a {
+	body #menu-main-menu li > a:hover, body #menu-main-menu li.current_page_item > a, body #menu-main-menu li.current_page_parent > a, body #menu-main-menu li.current-page-ancestor > a {
 		color: #FFF;
 		text-shadow: 2px 2px #000;
 		}
@@ -214,9 +214,7 @@ h1, h2, h3, h4, label {
 		color: #FFF;
 		text-shadow: 2px 2px #000;
 		}	
-		
-		
-		
+				
 		#menu-main-menu ul.sub-menu {
 			text-align: left;
 			position: absolute;
@@ -241,6 +239,11 @@ h1, h2, h3, h4, label {
 		#menu-main-menu ul.sub-menu li a {
 			padding: 5px 18px;
 		}	
+		
+		body.staff #menu-main-menu ul.sub-menu li.menu-item-98 a {
+		color: #FFF;
+		text-shadow: 2px 2px #000;
+		}
 
 /* MIDDLE */
 #middle {
@@ -273,6 +276,10 @@ h1, h2, h3, h4, label {
 	margin-bottom: 4px;
 }
 
+body.home #breadcrumbs {
+	margin-bottom: 0px;
+}
+
 #breadcrumbs a {
 	color: #A8A8A8;
 }
@@ -302,17 +309,19 @@ h1, h2, h3, h4, label {
 		padding: 0;
 	}
 	
-	#content div.buy-tickets-button {
+	#content div.featured-image {
 		position: relative;
-		margin-top: -150px;
-		margin-bottom: 90px;
-		/*border: 1px solid magenta;*/
-		overflow: hidden;
+		margin-bottom: 10px;
 	}
+	
+	#content div.buy-tickets-button {
+		position: absolute;
+		bottom: 25px;
+		right: 20px;
+	}	
 	
 	#content button.buy-tickets {
 		float: right;
-		margin-right: 20px;		
 		font-family: "Gotham Black", sans-serif;
 		background: url(images/bg-tab-full.png) top right no-repeat;
 		font-size: 36px;
@@ -373,8 +382,8 @@ h1, h2, h3, h4, label {
 	#content h3 {
 		font-weight:normal;
 		font-size: 1.5em;
-		margin-bottom: 4px;
-		padding-top: 4px;
+		margin-bottom: 2px;
+		padding-top: 8px;
 		}
 		
 		#content h3 a {
@@ -558,6 +567,7 @@ h1, h2, h3, h4, label {
 		float: left;
 		width: 49%;
 		padding-top: 20px;
+		font-style: italic;
 		}		
 		
 	span.post-navigation-next {
@@ -565,6 +575,7 @@ h1, h2, h3, h4, label {
 		width: 49%;
 		text-align: right;
 		padding-top: 20px;
+		font-style: italic;
 		}
 		
 		span.post-navigation-previous a, span.post-navigation-next a {
@@ -611,10 +622,15 @@ h1, h2, h3, h4, label {
 			margin-top:6px;
 		}
 
-	.size-thumbnail, .wp-post-image {
+	.size-thumbnail, .attachment-130x130 {
 		padding: 4px;
 		background-color:#FFF;
 		}
+		
+	.attachment-large {
+		max-width: 100%;
+		height: auto;
+	}
 		
 	form.wpcf7-form br {
 		display: none;
@@ -696,6 +712,11 @@ h1, h2, h3, h4, label {
 		margin-bottom: 20px;	
 		}
 		
+	#sidebar ul.children {
+		padding-left: 10px;
+		/*margin-bottom: 10px;*/
+	}
+		
 	#sidebar h2, #mobile h2 {
 		color: #000;
 		background: url(images/bg-sidebar-tab.png) top right no-repeat;
@@ -716,7 +737,11 @@ h1, h2, h3, h4, label {
 			}*/
 		
 	#sidebar li {
-		list-style-position: inside;
+		/*list-style-position: inside;*/
+	}
+	
+	#sidebar ul.sub-menu li {
+		margin-left: 10px;
 	}
 	
 	
@@ -731,7 +756,7 @@ h1, h2, h3, h4, label {
 		color: #000;
 	}
 	
-	#sidebar li.current_page_item a {
+	#sidebar li.current_page_item a, body.staff #sidebar li.page-item-83 a  {
 		color: #000;
 		font-weight: bold;
 		border-bottom: none;
@@ -767,11 +792,15 @@ h1, h2, h3, h4, label {
 		
 	/* Text Widgets */
 	#sidebar div.textwidget {
-		padding: 0 10px;
+		/*padding: 0 10px;*/
 	}
 	
 	#sidebar div.textwidget iframe {
+		-moz-box-sizing:    border-box;
+   -webkit-box-sizing: border-box;
+    box-sizing:        border-box;
 		border: 2px solid #A8A8A8 !important; 
+		
 	}
 	
 		
@@ -865,7 +894,7 @@ h1, h2, h3, h4, label {
 	}
 	
 	#sidebar li.widget_twitter ul  {
-		padding: 0px 10px;
+		/*padding: 0px 10px;*/
 	}
 	
 	#sidebar li.widget_twitter ul li {
@@ -1007,7 +1036,7 @@ h1, h2, h3, h4, label {
 		}
 	
 	#menu-main-menu > li a {
-		padding: 13px 10%; 
+		padding: 13px 10px; 
 		}
 	
 }
@@ -1162,6 +1191,12 @@ h1, h2, h3, h4, label {
 			padding: 0 20px;
 			margin-top: 2px;
 		}
+		
+	body.staff #menu-main-menu li.menu-item-52 ul.sub-menu {
+		display: block;
+		position: relative;
+		padding-bottom: 0px;
+		}
 	
 	#menu-main-menu li.current-menu-item ul.sub-menu li, #menu-main-menu li.current-menu-parent ul.sub-menu li {
 			border-top: 1px solid #000;
@@ -1244,37 +1279,41 @@ h1, h2, h3, h4, label {
 		}
 		
 	#mobile {
-	display: block;
+		display: none;
 		}
 		
 	#middle {
 		padding: 10px;
 		}
+	
+		#content { 
+			float: none;
+			width: auto; /* reset the width to follow it's parent element */
+			margin-bottom: 0;
+		}
 		
+		#content div.buy-tickets-button {
+			/*position: relative;
+			margin-top: 0px;
+			margin-bottom: 20px;
+			overflow: hidden;*/
+		}
 		
-			
-	#sidebar, #content { 
-		float: none;
-		width: auto; /* reset the width to follow it's parent element */
-	}
-	
-	#content div.buy-tickets-button {
-		position: relative;
-		margin-top: 0px;
-		margin-bottom: 20px;
-		overflow: hidden;
-	}
-	
-	#content button.buy-tickets {
-		float: none;
-	}
-	
-	#sidebar li.widget_twitter ul, #sidebar div.textwidget   {
-		padding: 0px;
-	}
-	
-	#sidebar div.textwidget iframe {
-	}
+		#content button.buy-tickets {
+			/*float: none;*/
+		}
+		
+		#sidebar { 
+			float: none;
+			width: auto; /* reset the width to follow it's parent element */
+		}
+		
+		#sidebar li.widget_twitter ul, #sidebar div.textwidget   {
+			padding: 0px;
+		}
+		
+		#sidebar div.textwidget iframe {
+		}
 	
 	#footer p, #footer span {
 		text-align: center;

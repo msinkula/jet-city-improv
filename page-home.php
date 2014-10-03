@@ -7,7 +7,7 @@
 <!-- End Spotlight -->
 
 <!-- Begin Mobile First Widgets 
-<div id="mobile" class="page-<?php the_ID(); ?>">
+<div id="mobile" class="page-<?php /*the_ID();*/ ?>">
 <?php /*if (function_exists('dynamic_sidebar') && dynamic_sidebar('mobile') ) : else :*/ ?><?php /*endif;*/ ?>
 </div>
  End Mobile First Widgets -->
@@ -38,8 +38,7 @@
 <?php endwhile; ?>
 <?php endif; ?>
 <nav class="post-navigation">
-    <span class="post-navigation-previous"><?php previous_posts_link('&laquo; Newer Postings'); ?></span>
-    <span class="post-navigation-next"><?php next_posts_link('Older Postings &raquo;'); ?></span>
+    <span class="post-navigation-next"><a href="/blog/">More from the Blog &raquo;</a></span>
 </nav>
 </div>
 <!-- End Content -->

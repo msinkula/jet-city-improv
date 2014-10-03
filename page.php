@@ -6,18 +6,19 @@
 <?php while (have_posts()) : the_post(); ?>
 	<article class="page" id="post-<?php the_ID(); ?>">
     <h1><?php the_title(); ?></h1>
-    <?php add_flexslider(); ?>
-	<?php /*get_buy_tickets_button();*/ 
+    <div class="featured-image">
+    <?php echo get_the_post_thumbnail($page->ID, 'large'); ?>
+	<?php
 	
-	$key = "buy-tickets-button";
-	$value = get_post_meta($post->ID, $key, true);
-
-	if (!empty($value)) {
+		$key = "buy-tickets-button";
+		$value = get_post_meta($post->ID, $key, true);
 	
-	echo '<div class="buy-tickets-button"><a href="'.$value.'"><button class="buy-tickets">Buy Tickets&nbsp;&raquo;</button></a></div>';
-
-	}  ?>
-    
+		if (!empty($value)) {
+		
+		echo '<div class="buy-tickets-button"><a href="'.$value.'"><button class="buy-tickets">Buy Tickets&nbsp;&raquo;</button></a></div>';
+	
+		}  ?>
+    </div>
     <?php the_content(); ?>
 	</article>
 <?php endwhile; ?>
