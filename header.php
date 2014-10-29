@@ -117,7 +117,7 @@
         
         <!-- Begin Tickets Link -->
         <div id="tickets">
-        <a href="https://wingitproductions.secure.force.com/ticket">Buy<br>Tickets</a>
+        <a href="buy-tickets">Buy<br>Tickets</a>
         </div>
         <!-- End Tickets Link -->
     

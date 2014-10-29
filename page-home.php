@@ -6,14 +6,8 @@
 </div>
 <!-- End Spotlight -->
 
-<!-- Begin Mobile First Widgets 
-<div id="mobile" class="page-<?php /*the_ID();*/ ?>">
-<?php /*if (function_exists('dynamic_sidebar') && dynamic_sidebar('mobile') ) : else :*/ ?><?php /*endif;*/ ?>
-</div>
- End Mobile First Widgets -->
-
 <!-- Begin Content --> 
-<div id="content">
+<div id="content" class="page-<?php the_ID(); ?>">
 
 <!-- Begin Content Loop -->
 <?php if (have_posts()) : ?>

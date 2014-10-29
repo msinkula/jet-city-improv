@@ -11,14 +11,14 @@ if ( function_exists('register_sidebar') )
 	'after_title' => '</h2>',
 	));
 	
-	register_sidebar(array(
+	/*register_sidebar(array(
 	'name' => 'mobile',
 	'description' => 'Widgets in this area will be shown only on the home page.',
 	'before_widget' => '<div id="%1$s" class="widget %2$s">',
 	'after_widget' => '</div>',
 	'before_title' => '<h2 class="widgettitle">',
 	'after_title' => '</h2>'
-	));
+	));*/
 
 // Register Menus
 function register_my_menus() {
@@ -86,7 +86,7 @@ function add_flexslider() {
 		if (is_page('Home')) { // use full size image with blockquote for home page
 			
         	echo $theImage;
-			echo '<blockquote class="home">&ldquo;'.$theBlockquote.'&rdquo;&nbsp;</blockquote>';
+			echo '<blockquote class="home">'.$theBlockquote.'&nbsp;</blockquote>';
 			echo '<a href="'.$theLink.'"><button class="home">Learn More&nbsp;&raquo;</button></a>';
 			
 		}
