@@ -1,24 +1,32 @@
 <?php
 
+/*  
+Theme Name: Jet City Improv
+Description: This is a theme your mom and her sister would love.
+Version: 69
+Author: Premium Design Works
+Author URI: http://www.premiumdw.com/
+*/
+
 // Register Sidebar	
 if ( function_exists('register_sidebar') )
 	register_sidebars(array(
 	'name' => 'sidebar',
-	'description' => 'Widgets in this area will be shown in the side bar.',
+	'description' => 'Widgets in this area will be shown in the sidebar.',
 	'before_widget' => '<div id="%1$s" class="widget %2$s">',
 	'after_widget' => '</div>',
 	'before_title' => '<h2 class="widgettitle">',
 	'after_title' => '</h2>',
 	));
 	
-	/*register_sidebar(array(
+	register_sidebar(array(
 	'name' => 'mobile',
-	'description' => 'Widgets in this area will be shown only on the home page.',
+	'description' => 'Widgets in this area will be shown above the blog postings on the home page.',
 	'before_widget' => '<div id="%1$s" class="widget %2$s">',
 	'after_widget' => '</div>',
 	'before_title' => '<h2 class="widgettitle">',
 	'after_title' => '</h2>'
-	));*/
+	));
 
 // Register Menus
 function register_my_menus() {

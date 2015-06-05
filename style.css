@@ -266,9 +266,6 @@ h1, h2, h3, h4, label {
 	height: 310px;*/
 }
 
-#mobile {
-	display: none;
-}
 	
 #breadcrumbs {
 	font-size: .75em;
@@ -291,7 +288,7 @@ body.home #breadcrumbs {
 	
 	
 	/* CONTENT */
-	#content {
+	#content, #news {
 		float:left;
 		width: 620px; /* you can still leave child elements at fixed width */
 		margin-bottom: 20px;
@@ -357,19 +354,19 @@ body.home #breadcrumbs {
 			text-decoration:none;
 			}
 			
-	#content h2 {
+	#content h2, #news h2 {
 		font-weight:normal;
 		font-size: 2em; 
 		padding-top: 8px;
 		margin-bottom: 2px;
 		}
 		
-		#content h2 a {
+		#content h2 a, #news h2 a {
 			color: #000;
 			text-decoration:none;
 			}
 			
-		#content h2 a:hover{
+		#content h2 a:hover, #news h2 a:hover {
 			color: #A7181D;
 			text-decoration:none;
 			}
@@ -389,33 +386,29 @@ body.home #breadcrumbs {
 			color: #A7181D;
 			}
 			
-	#content p {
+	#content p, #news p {
 		margin-bottom: 10px;
 		}
 		
-		#content p a {
+		#content p a, #news p a {
 			color: #A7181D;
 			border-bottom: 1px solid #BE0000;
 			}
 			
-		/*#content p a img {
-			border-bottom: none;
-			}*/
 			
-			
-		#content p a:hover {
+		#content p a:hover, #news p a:hover {
 			color: #000;
 			border-bottom: none;
 			}
 				
-	#content p.postdata {
+	#content p.postdata, #news p.postdata {
 		font-size: .875em;
 		font-weight: normal;
 		font-style:italic;
 		color: #000;
 		}
 		
-	#content p.wp-caption-text {
+	#content p.wp-caption-text, #news p.wp-caption-text {
 		font-size: .875em;
 		font-style: italic;
 		text-align: left;
@@ -487,7 +480,7 @@ body.home #breadcrumbs {
 		overflow: hidden;
 		}
 		
-	#content img.attachment-130x130 {
+	#content img.attachment-130x130, #news img.attachment-130x130 {
 		float: left;
 		margin-right: 20px;
 	}
@@ -498,17 +491,17 @@ body.home #breadcrumbs {
 		background-color:#FFFFFF;
 		}
 	
-	#content img {
+	#content img, #news img {
 		box-sizing: border-box;
-			background-color: #FFF;
-			}
+		background-color: #FFF;
+		}
 	
-	#content a img {
+	#content a img, #news a img {
 			border: 2px solid #A8A8A8;
 			background-color: #FFF;
 			}
 		
-		#content a:hover img {
+		#content a:hover img, #news a:hover img {
 			border: 2px solid #A7181D;
 			background-color: #A7181D;
 			}
@@ -525,7 +518,7 @@ body.home #breadcrumbs {
 		display: inline;
 		}
 	
-	#content img.alignleft {
+	#content img.alignleft, #news img.alignleft {
 		float: left;
 		margin: 0 20px 4px 0;
 		display: inline;
@@ -545,10 +538,8 @@ body.home #breadcrumbs {
 		}
 				
 	#content div.wp-caption {
-	   /*border: 1px solid #A8A8A8;*/ /* brown */
 	   text-align: center;
 	   background-color: #FFF;
-	   /*padding: 10px;*/
 	   margin-bottom: 10px;
 	   box-sizing: border-box;
 	   max-width: 620px;
@@ -591,37 +582,37 @@ body.home #breadcrumbs {
 			border-bottom: none;
 		}
 		
-	#content article.post-box {
+	#content article.post-box, #news article.post-box {
 		clear: both;
 		padding-bottom: 20px;
 		overflow:auto;
 		}
 		
-	#content article.post-box img {
+	#content article.post-box img, #news article.post-box img {
 		float: left;
 		margin-right: 20px;
 		}
 		
-	#content article.post-box p, #content article.page-excerpt p {
+	#content article.post-box p, #news article.post-box p, #content article.page-excerpt p {
 		display: inline;
 		}
 
-		#content article.post-box p.postdata {
+		#content article.post-box p.postdata, #news article.post-box p.postdata {
 		display: block;
 		}
 		
-		#content article.post-box p.full-story, #content article.page-excerpt p.full-story {
+		#content article.post-box p.full-story, #news article.post-box p.full-story, #content article.page-excerpt p.full-story {
 			font-style:italic;
 			font-size: .875em;
 			white-space: nowrap;
 		}
 
-	#content article.page-excerpt {
+	#content article.page-excerpt, #news article.page-excerpt {
 			overflow: hidden;
 			margin-bottom: 10px;
 		}
 		
-		#content article.page-excerpt img {
+		#content article.page-excerpt img, #news article.page-excerpt img {
 			margin-top:6px;
 		}
 
@@ -672,7 +663,7 @@ body.home #breadcrumbs {
 
 		
 	/* SIDEBAR */
-	#sidebar {
+	#sidebar, #mobile {
 		float: right;
 		width: 300px; /* you can still leave child elements at fixed width */
 		background-color: #FFF;
@@ -720,7 +711,7 @@ body.home #breadcrumbs {
 		/*margin-bottom: 10px;*/
 	}
 		
-	#sidebar h2, #mobile h2 {
+	#sidebar h2, #mobile h2, #news h1 {
 		color: #000;
 		background: url(images/bg-sidebar-tab.png) top right no-repeat;
 		background-color: #FFCC00; /* GOLD */
@@ -730,14 +721,14 @@ body.home #breadcrumbs {
 		margin-bottom: 10px;
 		}
 		
-		#sidebar h2 a {
+		#sidebar h2 a, #news h1 a {
 			color: #000;
 			}
 			
-		/*#sidebar h2 a:hover {
+		#sidebar h2 a:hover, #news h1 a:hover {
 			color: #FFF;
 			text-shadow: 2px 2px #000;
-			}*/
+			}
 		
 	#sidebar li {
 		/*list-style-position: inside;*/
@@ -786,7 +777,7 @@ body.home #breadcrumbs {
 		}
 	
 	.widget ul li {
-		padding: 10px 0;
+		/*padding: 10px 0;*/
 		}
 		
 	.widget ul li:last-child {
@@ -1047,7 +1038,7 @@ body.home #breadcrumbs {
 /* Tablet Screen Set to 1024 or Below */
 @media screen and (max-width: 1024px) {
 	
-	#content {
+	#content, #news {
 		width: 65.9574468085106%; /* 620px / 940px */
 	}
 	
@@ -1055,7 +1046,7 @@ body.home #breadcrumbs {
 		width: 50%;
 	}
 	
-	#sidebar {
+	#sidebar, #mobile {
 		width: 31.914893617021%; /* 300px / 940px */
 	}
 			
@@ -1280,19 +1271,16 @@ body.home #breadcrumbs {
 		#search {
 			display: none;
 		}
-		
-	#mobile {
-		display: none;
-		}
+	
 		
 	#middle {
 		padding: 10px;
 		}
 	
-		#content { 
+		#content, #news { 
 			float: none;
 			width: auto; /* reset the width to follow it's parent element */
-			margin-bottom: 0;
+			margin-bottom: 20px;
 		}
 		
 		#content div.buy-tickets-button {
@@ -1306,9 +1294,10 @@ body.home #breadcrumbs {
 			/*float: none;*/
 		}
 		
-		#sidebar { 
+		#sidebar, #mobile { 
 			float: none;
 			width: auto; /* reset the width to follow it's parent element */
+			margin-bottom: 20px;
 		}
 		
 		#sidebar li.widget_twitter ul, #sidebar div.textwidget   {

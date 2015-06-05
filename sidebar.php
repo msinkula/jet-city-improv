@@ -14,7 +14,7 @@
 		
         if ($children) { // if children ?>
         
-        	<h2 class="sub-menu-title"><a href="<?php echo $parent_link; ?>"><?php  echo $parent_title; ?></a>:</h2>
+        	<h2 class="sub-menu-title"><?php echo $parent_title; ?>:</h2>
         	<ul class="sub-menu">
         	<?php echo $children; ?>
         	</ul>
@@ -39,22 +39,15 @@
 	} ?>
     <!-- End Blog Categories -->
     
+    <!-- Begin Dynamic Mobile Sidebar -->
+    <?php wp_reset_query(); if (!(is_front_page())) : ?>    
+	<?php dynamic_sidebar('mobile') ?> 
+	<?php endif; ?>					
+    <!-- End Dynamic Mobile Sidebar -->
+    
     <!-- Begin Dynamic Sidebar -->
-    <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('sidebar') ) : else : ?>					
-    <?php endif; ?>
+    <?php dynamic_sidebar('sidebar') ?>					
     <!-- End Dynamic Sidebar -->
-    
-    <!-- Begin Mailing List Link
-    <div id="mailing-list">
-    <a href="https://wingitproductions.secure.force.com/signup" target="_blank"><button>Mailing List&nbsp;&raquo;</button></a>
-    </div>
-     End Mailing List Link -->
-    
-    <!-- Begin Donate Link
-    <div id="donate">
-    <a href="../donate/"><button>Donate&nbsp;&raquo;</button></a>
-    </div>
-     End Donate Link -->
     
 </div>
 <!-- End Sidebar -->

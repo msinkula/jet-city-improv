@@ -305,7 +305,7 @@ table.calendar-table-mini {
 	margin-bottom: 100px;
 }
 
-#sidebar .calnk a span {
+#sidebar .calnk a span, #mobile .calnk a span {
 	display:none;
 }
 .calnk a span {

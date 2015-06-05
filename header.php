@@ -117,7 +117,7 @@
         
         <!-- Begin Tickets Link -->
         <div id="tickets">
-        <a href="buy-tickets">Buy<br>Tickets</a>
+        <a href="http://www.jetcityimprov.org/buy-tickets/">Buy<br>Tickets</a>
         </div>
         <!-- End Tickets Link -->
     

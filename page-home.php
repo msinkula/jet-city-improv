@@ -6,18 +6,27 @@
 </div>
 <!-- End Spotlight -->
 
-<!-- Begin Content --> 
-<div id="content" class="page-<?php the_ID(); ?>">
-
 <!-- Begin Content Loop -->
+<div id="content">
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
 <?php the_content(''); ?>
 <?php endwhile; ?>
 <?php endif; ?>
+</div>
 <!-- End Content Loop -->
+
+<!-- Begin Dynamic Mobile Sidebar -->
+<div id="mobile">
+<?php if (is_front_page()) : ?>
+<?php dynamic_sidebar('mobile') ?> 
+<?php endif; ?>	
+</div>				
+<!-- End Dynamic Mobile Sidebar -->
     
 <!-- Begin News Loop -->
+<div id="news">
+<h1>From The Blog:</h1>
 <?php rewind_posts(); // stop loop one ?>
 <?php query_posts('showposts=5'); // show 5 latest posts ?>
 <?php if (have_posts()) : ?>
@@ -35,6 +44,6 @@
     <span class="post-navigation-next"><a href="/blog/">More from the Blog &raquo;</a></span>
 </nav>
 </div>
-<!-- End Content -->
+<!-- End News Loop -->
 
 <?php get_footer();?>
