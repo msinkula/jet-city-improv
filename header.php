@@ -134,9 +134,11 @@
 
         <div id="social-icons-tablet">
 
-        <a href="https://www.facebook.com/jetcityimprov" target="_blank" title="Jet City Improv's FaceBook Page"><img src="<?php bloginfo('template_directory'); ?>/images/img-facebook-mobile.png" alt="Jet City Improv's FaceBook Page"></a>
-
         <a href="https://twitter.com/JetCityImprov" target="_blank" title="Jet City Improv's Twitter Feed"><img src="<?php bloginfo('template_directory'); ?>/images/img-twitter-mobile.png" alt="Jet City Improv's Twitter Feed"></a>
+<!--Mark edit: added Instagram link-->
+        <a href="https://www.instagram.com/jetcityimprov" target="_blank" title="Jet City Improv's Instagram Page"><img src="<?php bloginfo('template_directory'); ?>/images/img-instagram-mobile.png" alt="Jet City Improv's Instagram Page"></a>
+
+        <a href="https://www.facebook.com/jetcityimprov" target="_blank" title="Jet City Improv's FaceBook Page"><img src="<?php bloginfo('template_directory'); ?>/images/img-facebook-mobile.png" alt="Jet City Improv's FaceBook Page"></a>
 
         <a href="http://www.youtube.com/user/JetCityImprov" target="_blank" title="Jet City Improv's YouTube Page"><img src="<?php bloginfo('template_directory'); ?>/images/img-youtube-mobile.png" alt="Jet City Improv's YouTube Page"></a>
 
@@ -206,9 +208,11 @@
 
         <div id="social-icons">
 
-        <a href="https://www.facebook.com/jetcityimprov" target="_blank" title="Jet City Improv's FaceBook Page"><img src="<?php bloginfo('template_directory'); ?>/images/img-facebook.png" alt="Jet City Improv's FaceBook Page"></a>
-
         <a href="https://twitter.com/JetCityImprov" target="_blank" title="Jet City Improv's Twitter Feed"><img src="<?php bloginfo('template_directory'); ?>/images/img-twitter.png" alt="Jet City Improv's Twitter Feed"></a>
+	<!--Mark edit: added Instagram link-->
+        <a href="https://www.instagram.com/jetcityimprov" target="_blank" title="Jet City Improv's Instagram Page"><img src="<?php bloginfo('template_directory'); ?>/images/img-instagram.png" alt="Jet City Improv's Instagram Page"></a>
+
+        <a href="https://www.facebook.com/jetcityimprov" target="_blank" title="Jet City Improv's FaceBook Page"><img src="<?php bloginfo('template_directory'); ?>/images/img-facebook.png" alt="Jet City Improv's FaceBook Page"></a>
 
         <a href="http://www.youtube.com/user/JetCityImprov" target="_blank" title="Jet City Improv's YouTube Page"><img src="<?php bloginfo('template_directory'); ?>/images/img-youtube.png" alt="Jet City Improv's YouTube Page"></a>
 
